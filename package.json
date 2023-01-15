@@ -1,0 +1,17 @@
+{
+  "name": "go_to_cinema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:main_page": "cypress run -s cypress/e2e/main_page.cy.js --browser chrome --headed --no-exit",
+    "test:login_admin": "cypress run -s cypress/e2e/login_admin.cy.js --browser chrome --headed --no-exit",
+    "test:booking_ticket": "cypress run -s cypress/e2e/login_admin.cy.js --browser chrome --headed --no-exit",
+    "test:dashboard": "cypress run --record --key 12916a0b-6a7e-40f9-a5c4-0ac1499f887a"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.11.0"
+  }
+}
