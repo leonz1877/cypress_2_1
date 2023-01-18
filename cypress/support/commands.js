@@ -20,20 +20,21 @@ Cypress.Commands.add("selectDay", (numberDay) => {
 // выбрать зал
 Cypress.Commands.add("selectHall", (hall) => {
   let numberHall;
-  if (hall == "Зал 1") {
+  // if (hall == "Зал 1") {
+  //   numberHall = 0;
+  // }
+  // за время проверки работы зал был удален
+
+  if (hall == "TEST HALL") {
     numberHall = 0;
   }
 
-  if (hall == "TEST HALL") {
+  if (hall == "Hercules") {
     numberHall = 1;
   }
 
-  if (hall == "Hercules") {
-    numberHall = 2;
-  }
-
   if (hall == "data.newHall") {
-    numberHall = 3;
+    numberHall = 2;
   }
 
   if (hall == undefined) {
